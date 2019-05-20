@@ -18,7 +18,7 @@ public class Homepage extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homepage_layout);
-        user = LoginActivity.getUser();
+        user = LoginActivity.getUser();//
         Toast.makeText(this, user.getFirstname()+ " " + user.getLastname() + " خوش آمدید!" , Toast.LENGTH_LONG).show();
     }
 }
